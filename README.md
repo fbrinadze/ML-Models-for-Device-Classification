@@ -8,8 +8,8 @@ Pre-trained machine learning models for network device classification and anomal
 |------|-------------|--------|
 | device_classifier.pkl | Classifies network devices (Desktop, Laptop, Server, Printer, etc.) | scikit-learn pickle |
 | os_fingerprint.pkl | Identifies operating systems from network signatures | scikit-learn pickle |
-| nomaly_detector.pkl | Detects anomalous devices on the network | scikit-learn pickle |
-| uto_labeler.pkl | Automatically labels devices using clustering | scikit-learn pickle |
+| anomaly_detector.pkl | Detects anomalous devices on the network | scikit-learn pickle |
+| auto_labeler.pkl | Automatically labels devices using clustering | scikit-learn pickle |
 
 ## Training Data
 
@@ -17,7 +17,7 @@ Pre-trained machine learning models for network device classification and anomal
 |------|-------------|
 | 	raining_data.json | Device classification training samples |
 | os_training.json | OS fingerprinting training samples |
-| nomaly_baseline.json | Baseline data for anomaly detection |
+| anomaly_baseline.json | Baseline data for anomaly detection |
 | cluster_labels.json | Cluster-to-label mappings |
 
 ## Requirements
@@ -66,6 +66,3 @@ with open('anomaly_detector.pkl', 'rb') as f:
 
 MIT License - Free to use and modify.
 
-## Related Projects
-
-- [EndPointScannerv1](https://github.com/fbrinadze/EndPointScannerv1) - Network endpoint discovery tool that uses these models
